@@ -1,0 +1,131 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-flow: column; */
+  grid-template-areas:
+    'header header header'
+    'top-articles top-articles top-articles'
+    'latest-news latest-news latest-news'
+    'latest-funding latest-funding latest-funding'
+    'hard-fork apps gear'
+    'tech creative podium'
+    'insights launch distract'
+    'latest-deals latest-deals latest-deals'
+    'footer footer footer';
+}
+
+header {
+  grid-area: header;
+}
+
+.global-nav {
+  height: 32px;
+  width: 100wv;
+  background-color: aquamarine;
+}
+
+.topic-nav {
+  height: 48px;
+  width: 100wv;
+  background-color: red;
+}
+
+.top-articles {
+  grid-area: top-articles;
+  height: 544px;
+  width: 100wv;
+  background-color: rgb(85, 255, 51);
+}
+
+.latest-news {
+  grid-area: latest-news;
+  height: 590px;
+  width: 100wv;
+  background-color: orange;
+}
+
+.latest-funding {
+  grid-area: latest-funding;
+  height: 337px;
+  width: 100wv;
+  background-color: green;
+}
+
+.hard-fork {
+  grid-area: hard-fork;
+  height: 654px;
+  width: 33wv;
+  background-color: blue;
+}
+
+.apps {
+  grid-area: apps;
+  height: 654px;
+  width: 33wv;
+  background-color: hotpink;
+}
+
+.gear {
+  grid-area: gear;
+  height: 654px;
+  width: 33wv;
+  background-color: rebeccapurple;
+}
+
+.tech {
+  grid-area: tech;
+  height: 654px;
+  width: 33wv;
+  background-color: forestgreen;
+}
+
+.creative {
+  grid-area: creative;
+  height: 654px;
+  width: 33wv;
+  background-color: coral;
+}
+
+.podium {
+  grid-area: podium;
+  height: 654px;
+  width: 33wv;
+  background-color: sienna;
+}
+
+.insights {
+  grid-area: insights;
+  height: 654px;
+  width: 33wv;
+  background-color: khaki;
+}
+
+.launch {
+  grid-area: launch;
+  height: 654px;
+  width: 33wv;
+  background-color: ivory;
+}
+
+.distract {
+  grid-area: distract;
+  height: 654px;
+  width: 33wv;
+  background-color: azure;
+}
+
+.latest-deals {
+  grid-area: latest-deals;
+  height: 611px;
+  width: 33wv;
+  background-color: thistle;
+}
+
+footer {
+  grid-area: footer;
+  height: 192px;
+  width: 33wv;
+  background-color: wheat;
+}
