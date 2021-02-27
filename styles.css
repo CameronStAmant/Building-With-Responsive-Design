@@ -17,6 +17,7 @@ body {
     'insights launch distract'
     'latest-deals latest-deals latest-deals'
     'footer footer footer';
+  padding: 0 12.5px;
 }
 
 header {
@@ -24,17 +25,18 @@ header {
 }
 
 .global-nav {
+  color: rgb(152, 152, 152);
+
   height: 32px;
   width: 100wv;
-  background-color: aquamarine;
   display: grid;
+  background-color: black;
   grid-auto-flow: column;
 }
 
 .topic-nav {
   height: 48px;
   width: 100wv;
-  background-color: red;
 }
 
 ul {
@@ -61,10 +63,10 @@ ul {
   grid-area: top-articles;
   height: 544px;
   width: 100wv;
-  background-color: rgb(85, 255, 51);
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 2fr 1fr;
+  gap: 15px;
 }
 
 .top-articles article {
@@ -79,15 +81,15 @@ ul {
   background-size: cover;
 }
 
-.top-articles div {
+.top-articles > div {
   display: grid;
+  gap: 15px;
 }
 
 .latest-news {
   grid-area: latest-news;
   height: 590px;
   width: 100wv;
-  background-color: orange;
   display: grid;
   grid-template-rows: 50px 1fr;
 }
@@ -113,6 +115,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
 }
 
 .latest-funding {
@@ -134,9 +137,10 @@ ul {
   background-size: cover;
 }
 
-.latest-funding section {
+.latest-funding > section {
   display: grid;
   grid-auto-flow: column;
+  gap: 25px;
 }
 
 .top-older-article {
@@ -193,9 +197,9 @@ ul {
   grid-area: hard-fork;
   height: 654px;
   width: 33wv;
-  background-color: rgb(183, 183, 252);
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding-right: 12.5px;
 }
 
 .min-articles {
@@ -212,79 +216,78 @@ ul {
   grid-area: apps;
   height: 654px;
   width: 33wv;
-  background-color: hotpink;
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding: 0 12.5px;
 }
 
 .gear {
   grid-area: gear;
   height: 654px;
   width: 33wv;
-  background-color: darkturquoise;
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding-left: 12.5px;
 }
 
 .tech {
   grid-area: tech;
   height: 654px;
   width: 33wv;
-  background-color: forestgreen;
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding-right: 12.5px;
 }
 
 .creative {
   grid-area: creative;
   height: 654px;
   width: 33wv;
-  background-color: coral;
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding: 0 12.5px;
 }
 
 .podium {
   grid-area: podium;
   height: 654px;
   width: 33wv;
-  background-color: sienna;
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding-left: 12.5px;
 }
 
 .insights {
   grid-area: insights;
   height: 654px;
   width: 33wv;
-  background-color: khaki;
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding-right: 12.5px;
 }
 
 .launch {
   grid-area: launch;
   height: 654px;
   width: 33wv;
-  background-color: ivory;
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding: 0 12.5px;
 }
 
 .distract {
   grid-area: distract;
   height: 654px;
   width: 33wv;
-  background-color: azure;
   display: grid;
   grid-template-rows: 2fr 1fr 2fr;
+  padding-left: 12.5px;
 }
 
 .latest-deals {
   grid-area: latest-deals;
   height: 611px;
   width: 33wv;
-  background-color: thistle;
   display: grid;
   grid-template-rows: 50px 1fr;
 }
@@ -293,7 +296,7 @@ footer {
   grid-area: footer;
   height: 192px;
   width: 33wv;
-  background-color: wheat;
+  color: rgb(152, 152, 152);
 }
 
 footer nav {
@@ -301,6 +304,7 @@ footer nav {
   display: grid;
   grid-template-rows: 1fr 1fr;
   place-items: center;
+  background-color: black;
 }
 
 @media screen and (max-device-width: 1023px) {
@@ -350,35 +354,47 @@ footer nav {
     grid-template-rows: 3fr 1fr 2fr;
   }
 
+  .hard-fork {
+    padding: 0 12.5px 0 0;
+  }
+
   .apps {
+    padding: 0 0 0 12.5px;
     height: 691px;
   }
 
   .gear {
+    padding: 0 12.5px 0 0;
     height: 691px;
   }
 
   .tech {
+    padding: 0 0 0 12.5px;
     height: 691px;
   }
 
   .creative {
+    padding: 0 12.5px 0 0;
     height: 691px;
   }
 
   .podium {
+    padding: 0 0 0 12.5px;
     height: 691px;
   }
 
   .insights {
+    padding: 0 12.5px 0 0;
     height: 691px;
   }
 
   .launch {
+    padding: 0 0 0 12.5px;
     height: 691px;
   }
 
   .distract {
+    padding: 0 12.5px 0 0;
     height: 691px;
   }
 
