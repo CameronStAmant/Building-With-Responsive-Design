@@ -41,6 +41,16 @@ ul {
   display: grid;
   grid-auto-flow: column;
   margin: 0;
+  grid-auto-columns: minmax(min-content, max-content);
+  gap: 5px;
+}
+
+.nav-ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  margin: 0;
+  gap: 0px;
 }
 
 .order-article-information {
@@ -59,8 +69,10 @@ ul {
 
 .top-articles article {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
+    '.'
+    '.'
     '.'
     'article-information';
   background-image: url('/images/kitten-1031261_1920.jpg');
@@ -115,6 +127,11 @@ ul {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 3fr 1fr;
+}
+
+.small-latest div {
+  background-image: url('/images/kitty-2948404_1920.jpg');
+  background-size: cover;
 }
 
 .latest-funding section {
@@ -183,6 +200,12 @@ ul {
 
 .min-articles {
   display: grid;
+}
+
+.list-bottom {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: '.' '.' '.' 'article-information';
 }
 
 .apps {
@@ -417,8 +440,22 @@ footer nav {
     grid-template-rows: repeat(8, 1fr);
   }
 
+  .eight-articles article {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'cover-photo article-information';
+  }
+
   .latest-funding {
-    height: 360px;
+    height: 872px;
+  }
+
+  .latest-funding section article {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 2fr 1fr 1fr;
   }
 
   .latest-funding section {
@@ -433,6 +470,12 @@ footer nav {
 
   .hard-fork {
     height: 838px;
+  }
+
+  .list-bottom {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: '.' '.' '.' 'article-information';
   }
 
   .apps {
